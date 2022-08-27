@@ -26,3 +26,16 @@ nav a {
     padding-top: 10px;
     padding-right: 10px;
 }
+
+.new-post {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#new-post {
+    position: absolute;    
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}

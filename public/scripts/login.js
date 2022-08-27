@@ -1,6 +1,5 @@
 async function loginFormHandler(event) {
     event.preventDefault();
-    console.log('tes');
 
     const username = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
@@ -16,7 +15,7 @@ async function loginFormHandler(event) {
         });
         
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert('Username and/or password is incorrect');
         }
