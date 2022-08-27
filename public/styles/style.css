@@ -1,0 +1,28 @@
+nav a {
+    border-right: 1px darkgray solid;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.post {
+    border: 1px darkgray solid;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.post-header {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border-bottom: 1px darkgray solid;
+}
+.post-header p {
+    padding-left: 10px;
+    padding-top: 10px;    
+}
+
+.post-content {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}

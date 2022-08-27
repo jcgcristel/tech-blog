@@ -1,0 +1,11 @@
+<div class="">
+    {{#each posts}}
+    <div class="post">
+        <div class="d-flex post-header">
+            <h2>{{title}}</h2>
+            <p>by {{user.username}} on {{format_date created_at}}</p>
+        </div>
+        <p class="post-content">{{text}}</p>
+    </div>
+    {{/each}}
+</div>
