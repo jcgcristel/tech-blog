@@ -49,4 +49,13 @@ router.get('/', (req, res) => {
     }
 });
 
+router.get('/new', (req, res) => {
+    if (req.session.user_id) {
+        res.render('new-post', { loggedIn: req.session.user_id });
+    }
+    else {
+        res.redirect('/login');
+    }
+})
+
 module.exports = router;

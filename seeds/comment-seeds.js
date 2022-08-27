@@ -6,6 +6,11 @@ const commentdata = [
         text: "My first comment.",
         user_id: 1,
         post_id: 1
+    },
+    {
+        text: "My second comment.",
+        user_id: 1,
+        post_id: 1
     }
 ]
 

@@ -1,9 +1,12 @@
-<div class="d-flex new-post">
-    <button class="btn" id="new-post">Create a New Post</button>
+
+<div class="p-4">
+    <a href="/dashboard/new">
+        <button class="btn">Create a New Post</button>
+    </a>
 </div>
 <div>
     {{#each posts}}
-    <div class="post">s
+    <div class="post">
         <div class="d-flex post-header">
             <h2>{{title}}</h2>
             <p>by {{user.username}} on {{format_date created_at}}</p>
