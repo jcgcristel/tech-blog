@@ -1,13 +1,8 @@
+<h2>Homepage</h2>
 <div class="">
-    {{#each posts}}
-    <div class="post">
-        <div class="d-flex post-header">
-            <a href="/post/{{id}}">
-                <h2>{{title}}</h2>
-            </a>
-            <p>by {{user.username}} on {{format_date created_at}}</p>
-        </div>
-        <p class="post-content">{{text}}</p>
-    </div>
+    {{#each posts as |post|}}
+    <a href="/post/{{id}}">
+        {{> post post}}
+    </a> 
     {{/each}}
 </div>

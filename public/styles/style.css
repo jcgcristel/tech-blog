@@ -1,3 +1,18 @@
+header {
+    border-bottom: 1px darkgray solid;
+    padding-bottom: 10px;
+}
+
+nav {
+    margin: auto;
+}
+
+/* ----------------------------- */
+
+main h2 {
+    padding-top: 25px;
+}
+
 .btn {
     background-color: white;
 }
@@ -12,21 +27,54 @@ nav a {
     padding-left: 10px;
 }
 
+/* ----------------------------- */
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: none;
+}
+
+/* ----------------------------- */
+
 .post, .comment {
     border: 1px darkgray solid;
     border-radius: 10px;
     margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.comment {
+    border: 1px darkgray dotted;
+}
+
+.post:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.noHover:hover {
+    background-color: transparent;
 }
 
 .post-header, .comment-header {
     padding-left: 10px;
-    padding-top: 10px;
     padding-right: 10px;
     border-bottom: 1px darkgray solid;
 }
+
+.comment-header {
+    border-bottom: 1px darkgray dotted;
+}
+
+.post-header h3 {
+    padding-top: 10px;
+}
+
 .post-header p {
     padding-left: 10px;
-    padding-top: 10px;    
+    padding-top: 17px;    
 }
 
 .post-content {
@@ -47,11 +95,12 @@ nav a {
     transform: translate(-50%);
 }
 
-.comment h2 {
+.comment h4 {
+    padding-top: 10px;
     font-size: 18px;
 }
 
-.comment h2 span {
+.comment h4 span {
     font-size: 12px;
 }
 
