@@ -22,10 +22,21 @@ main h2 {
 }
 
 nav a {
+    text-decoration: none;
     border-right: 1px darkgray solid;
     padding-right: 10px;
     padding-left: 10px;
 }
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------- */
+
+#username, #password, #password-confirm {
+    margin: auto;}
 
 /* ----------------------------- */
 
@@ -35,6 +46,13 @@ main a {
 
 main a:hover {
     text-decoration: none;
+}
+
+/* ----------------------------- */
+
+#delete:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* ----------------------------- */
@@ -51,11 +69,14 @@ main a:hover {
 }
 
 .post:hover {
-    background-color: rgb(225, 225, 225);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 25px 10px white;
 }
 
 .noHover:hover {
     background-color: transparent;
+    box-shadow: none;
 }
 
 .post-header, .comment-header {

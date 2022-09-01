@@ -11,10 +11,10 @@ async function logout() {
 
 
     if (response.ok) {
-        document.location.replace('/');
+        window.location.replace('/');
     } else {
         if (other.ok){
-            document.location.replace('/');
+            window.location.replace('/');
             return;
         }
         alert(response.statusText);

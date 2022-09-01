@@ -1,16 +1,24 @@
-<div class="d-flex">
-    <form class="signup-form text-center w-100 justify-content-center">
-        <h3>Create an Account</h3>
+
+<form class="d-flex signup-form text-center w-100 justify-content-center">
+    <div class="col-lg-6 col-md-12">
+        <h3 class="p-4">Create an Account</h3>
         <div class="input-group mb-3">
             <label for="username" class="input-group-text">Username:</label>
             <input name="username" id="username" type="text" class="form-control card-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>						
-        <div class="input-group mb-3 ">
+        <div class="d-flex">
+            <div class="input-group mb-3">
             <label for="password" class="input-group-text password">Password:</label>
             <input name="password" id="password" type="password" class="form-control card-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>					
+        </div>
+        <div class="input-group mb-3">
+            <label for="password-confirm" class="input-group-text password">Confirm Password:</label>
+            <input name="password-confirm" id="password-confirm" type="password" class="form-control card-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        </div>
         <button type="submit" id="signup-btn" class="btn">Sign Up</button>
-    </form>
-</div>
+    </div>
+</form>
+
 
 <script src="/scripts/signup.js"></script>

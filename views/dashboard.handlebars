@@ -1,14 +1,21 @@
-
-<h2>Your Dashboard</h2>
-<div class="p-4">
-    <a href="/dashboard/new">
-        <button class="btn">Create a New Post</button>
-    </a>
-</div>
-<div>
-    {{#each posts as |post|}}
-    <a href="/edit/{{id}}">
-        {{> post post}}
-    </a> 
-    {{/each}}
+<div class="d-flex text-center w-100 justify-content-center">
+    <div class="col-lg-6 col-md-12">        
+        <h2>Your Dashboard</h2>
+        <div class="p-4">
+            <a href="/dashboard/new">
+                <button class="btn">Create a New Post</button>
+            </a>
+        </div>
+        <div>
+            {{#if posts.length}}
+                {{#each posts as |post|}}
+                <a href="/edit/{{id}}">
+                    {{> post post}}
+                </a> 
+                {{/each}}
+            {{else}}
+                <p>You currently have no posts.</p>
+            {{/if}}
+        </div>
+    </div>
 </div>

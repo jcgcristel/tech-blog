@@ -1,8 +1,19 @@
-<h2>Homepage</h2>
-<div class="">
-    {{#each posts as |post|}}
-    <a href="/post/{{id}}">
-        {{> post post}}
-    </a> 
-    {{/each}}
+<div class="d-flex text-center w-100 justify-content-center">
+   <div class="col-lg-6 col-md-12">
+         <h2>Tech Blog Homepage</h2>
+
+        {{#if posts.length}}
+        <div class="">
+            {{#each posts as |post|}}
+            <a href="/post/{{id}}">
+                {{> post post}}
+            </a> 
+            {{/each}}
+        </div>
+        {{else}}
+        <p>There are currently no posts.</p>
+        {{/if}}    
+   </div>
 </div>
+
+

@@ -1,13 +1,18 @@
-<h2>Edit Your Post</h2>
+<div class="d-flex text-center justify-content-center">
+    <div class="col-lg-6 col-md-12">
+        <p id="delete" class="pt-4 text-right text-danger">Delete Post</p>
+        <h2>Edit Your Post</h2>
 
-<form class="newPost-form">
-    <label for="title" >Title</label></br>
-    <input type="text" id="title" name="title" class="w-100 form-control" value="{{post.title}}"></br>
-    <label for="content">Content</label></br>
-    <textarea id="content" class="w-100 form-control">{{post.text}}</textarea>
-    <div class="text-center m-4">
-        <input type="submit" value="Update" class="btn">
+        <form class="newPost-form">
+            <label for="title" >Title</label></br>
+            <input type="text" id="title" name="title" class="w-100 form-control" value="{{post.title}}"></br>
+            <label for="content">Content</label></br>
+            <textarea id="content" class="w-100 form-control">{{post.text}}</textarea>
+            <div class="text-center m-4">
+                <input type="submit" value="Update" class="btn">
+            </div>
+        </form>
     </div>
-</form>
-
+</div>  
 <script src="/scripts/updatepost.js"></script>
+<script src="/scripts/deletepost.js"></script>
