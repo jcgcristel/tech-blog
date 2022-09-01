@@ -50,10 +50,6 @@ main a:hover {
 
 /* ----------------------------- */
 
-#delete {
-    background-color: white;
-}
-
 #delete:hover {
     cursor: pointer;
     text-decoration: underline;
